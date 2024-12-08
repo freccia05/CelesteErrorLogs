@@ -1,0 +1,1210 @@
+Celeste Error Log
+==========================================
+
+Ver 1.4.0.0
+12/8/2024 2:47:43 PM
+System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 numVertices, Array indexData, Int32 indexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration, _D3DFORMAT indexFormat)
+   at Celeste.GFX.DrawIndexedVertices[T](Matrix matrix, T[] vertices, Int32 vertexCount, Int32[] indices, Int32 primitiveCount, Effect effect, BlendState blendState)
+   at Celeste.LightingRenderer.BeforeRender(Scene scene)
+   at Monocle.RendererList.BeforeRender()
+   at Celeste.Level.BeforeRender()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/8/2024 2:45:07 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/6/2024 5:54:50 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/6/2024 11:57:20 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/6/2024 11:57:09 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/5/2024 3:35:48 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/5/2024 3:35:38 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/5/2024 1:16:47 AM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/5/2024 12:18:32 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/5/2024 12:18:25 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/5/2024 12:18:18 AM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 6:32:18 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 6:31:55 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 2:54:33 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 2:54:22 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 10:38:02 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 10:37:53 AM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 10:00:41 AM
+System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration)
+   at Celeste.GFX.DrawVertices[T](Matrix matrix, T[] vertices, Int32 vertexCount, Effect effect, BlendState blendState)
+   at Celeste.ScreenWipe.DrawPrimitives(VertexPositionColor[] vertices)
+   at Celeste.FadeWipe.Render(Scene scene)
+   at Monocle.RendererList.Render()
+   at Monocle.Scene.Render()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 9:59:10 AM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/4/2024 9:55:21 AM
+System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration)
+   at Celeste.GFX.DrawVertices[T](Matrix matrix, T[] vertices, Int32 vertexCount, Effect effect, BlendState blendState)
+   at Celeste.ScreenWipe.DrawPrimitives(VertexPositionColor[] vertices)
+   at Celeste.FadeWipe.Render(Scene scene)
+   at Monocle.RendererList.Render()
+   at Monocle.Scene.Render()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/3/2024 3:40:59 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 numVertices, Array indexData, Int32 indexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration, _D3DFORMAT indexFormat)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 numVertices, Int32[] indexData, Int32 indexOffset, Int32 primitiveCount)
+   at Celeste.LightingRenderer.DrawLightOccluders(Matrix matrix, Level level)
+   at Celeste.LightingRenderer.BeforeRender(Scene scene)
+   at Monocle.RendererList.BeforeRender()
+   at Celeste.Level.BeforeRender()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/3/2024 1:10:05 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/3/2024 12:59:11 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/2/2024 11:49:59 AM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+12/2/2024 10:48:03 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/30/2024 1:05:51 AM
+System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration)
+   at Celeste.Skybox.Draw(Matrix matrix, Color color)
+   at Celeste.MountainModel.BeforeRender(Scene scene)
+   at Celeste.MountainRenderer.BeforeRender(Scene scene)
+   at Monocle.RendererList.BeforeRender()
+   at Monocle.Scene.BeforeRender()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/29/2024 5:10:13 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/29/2024 1:15:51 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/29/2024 12:58:01 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/29/2024 12:35:52 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/28/2024 8:57:35 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/28/2024 8:41:50 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/28/2024 7:28:06 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/28/2024 6:43:42 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/25/2024 3:31:56 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/25/2024 12:38:43 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 numVertices, Array indexData, Int32 indexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration, _D3DFORMAT indexFormat)
+   at Celeste.LightingRenderer.ClearDirtyLights(Matrix matrix)
+   at Celeste.LightingRenderer.BeforeRender(Scene scene)
+   at Monocle.RendererList.BeforeRender()
+   at Celeste.Level.BeforeRender()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/25/2024 12:09:16 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/22/2024 9:38:43 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/22/2024 9:38:35 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/22/2024 2:53:29 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/22/2024 1:45:15 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration)
+   at Celeste.GFX.DrawVertices[T](Matrix matrix, T[] vertices, Int32 vertexCount, Effect effect, BlendState blendState)
+   at Celeste.Godrays.Render(Scene scene)
+   at Celeste.BackdropRenderer.Render(Scene scene)
+   at Celeste.Level.Render()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/22/2024 11:27:50 AM
+System.InvalidOperationException: An unexpected error has occurred.
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 primitiveCount, VertexDeclaration vertexDeclaration)
+   at Celeste.GFX.DrawVertices[T](Matrix matrix, T[] vertices, Int32 vertexCount, Effect effect, BlendState blendState)
+   at Celeste.Godrays.Render(Scene scene)
+   at Celeste.BackdropRenderer.Render(Scene scene)
+   at Celeste.Level.Render()
+   at Monocle.Engine.RenderCore()
+   at Celeste.Celeste.RenderCore()
+   at Monocle.Engine.Draw(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/22/2024 10:25:01 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/20/2024 11:45:25 AM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/20/2024 10:20:29 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/19/2024 12:57:57 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/17/2024 3:09:09 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/17/2024 3:08:48 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/15/2024 4:06:24 PM
+System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameHost.OnIdle()
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/14/2024 3:35:07 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/14/2024 3:34:58 PM
+System.InvalidOperationException: A previous Draw call threw an unhandled exception. See InnerException for details. ---> System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   at Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present(tagRECT* pSource, tagRECT* pDest, HWND__* hOverride)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.EndDraw()
+   at Microsoft.Xna.Framework.Game.EndDraw()
+   at Microsoft.Xna.Framework.Game.DrawFrame()
+   at Microsoft.Xna.Framework.Game.Paint(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnPaint()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_Paint(Object sender, PaintEventArgs e)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Microsoft.Xna.Framework.WindowsGameHost.Run()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/14/2024 2:55:28 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/13/2024 6:20:22 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+Ver 1.4.0.0
+11/27/2022 11:54:20 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Monocle.Engine.UpdateView()
+   at Monocle.Engine.OnClientSizeChanged(Object sender, EventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Microsoft.Xna.Framework.GameWindow.OnClientSizeChanged()
+   at Microsoft.Xna.Framework.WindowsGameWindow.mainForm_UserResized(Object sender, EventArgs e)
+   at Microsoft.Xna.Framework.WindowsGameForm.OnUserResized(Boolean forceEvent)
+   at Microsoft.Xna.Framework.WindowsGameForm.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.WindowsGameWindow.EndScreenDeviceChange(String screenDeviceName, Int32 clientWidth, Int32 clientHeight)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ChangeDevice(Boolean forceCreate)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.Microsoft.Xna.Framework.IGraphicsDeviceManager.CreateDevice()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Monocle.Engine.RunWithLogging()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
